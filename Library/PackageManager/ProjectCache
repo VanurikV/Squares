@@ -5,21 +5,121 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637497604955564631
-    m_Hash: 2511042316
+      ticks: 637497724665990540
+    m_Hash: 320641001
   m_LockFileStatus:
     m_FilePath: E:/Unity Project/Squares/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637497605259586598
-    m_Hash: 4272062689
+      ticks: 637497724692718367
+    m_Hash: 3213572493
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.leopotam.ecs@https://github.com/Leopotam/ecs.git
+      testable: 0
+      isDirectDependency: 1
+      version: 2021.2.22
+      source: 5
+      resolvedPath: E:\Unity Project\Squares\Library\PackageCache\com.leopotam.ecs@7b80d2d637
+      assetPath: Packages/com.leopotam.ecs
+      name: com.leopotam.ecs
+      displayName: LeoECS Core
+      author:
+        name: Leopotam
+        email: 
+        url: 
+      category: 
+      type: 
+      description: LeoECS is simple lightweight C# Entity Component System framework
+        based on structs. Performance, zero/small memory allocations/footprint -
+        main goals of this project.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - leoecs
+      - ecs
+      - performance
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/Leopotam/ecs.git
+        revision: 
+        path: 
+    - packageId: com.leopotam.ecs-unityintegration@https://github.com/Leopotam/ecs-unityintegration.git
+      testable: 0
+      isDirectDependency: 1
+      version: 2021.1.22
+      source: 5
+      resolvedPath: E:\Unity Project\Squares\Library\PackageCache\com.leopotam.ecs-unityintegration@127d6a8f02
+      assetPath: Packages/com.leopotam.ecs-unityintegration
+      name: com.leopotam.ecs-unityintegration
+      displayName: LeoECS Unity Integration
+      author:
+        name: Leopotam
+        email: 
+        url: 
+      category: 
+      type: 
+      description: UnityEditor integration for LeoECS Entity Component System framework.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - leoecs
+      - ecs
+      - performance
+      - unity
+      - integration
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.com/Leopotam/ecs-unityintegration.git
+        revision: 
+        path: 
     - packageId: com.unity.2d.animation@5.0.3
       testable: 0
       isDirectDependency: 1
@@ -1253,6 +1353,7 @@ m_PackageAssets:
         - 1.5.0
         - 1.5.1
         - 1.5.3
+        - 1.5.4
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.1
@@ -1271,6 +1372,7 @@ m_PackageAssets:
         - 2.1.0
         - 2.1.1
         - 2.1.3
+        - 2.1.4
         - 3.0.0-preview.1
         - 3.0.0-preview.3
         - 3.0.0-preview.4
@@ -1285,10 +1387,12 @@ m_PackageAssets:
         - 3.0.0
         - 3.0.1
         - 3.0.3
+        - 3.0.4
         compatible:
         - 3.0.1
         - 3.0.3
-        verified: 3.0.3
+        - 3.0.4
+        verified: 3.0.4
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0

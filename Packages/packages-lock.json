@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.leopotam.ecs": {
+      "version": "https://github.com/Leopotam/ecs.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "7b80d2d637c73da0d05e7e26857f244f0552ea80"
+    },
+    "com.leopotam.ecs-unityintegration": {
+      "version": "https://github.com/Leopotam/ecs-unityintegration.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "127d6a8f02ec987ac724a7fc671b1d5d00b0ea56"
+    },
     "com.unity.2d.animation": {
       "version": "5.0.3",
       "depth": 0,

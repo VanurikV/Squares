@@ -1,0 +1,48 @@
+using Leopotam.Ecs;
+using System;
+using Client;
+using UnityEngine;
+
+namespace squares
+{
+    sealed partial class InitSystem : IEcsInitSystem
+    {
+        // auto-injected fields.
+        readonly EcsWorld _world = null;
+        private GlobalData _globalData = null;
+
+        public void Init()
+        {
+            LoladAllLevels();
+           
+            LoadPrefab();
+
+            LoadLevelData();
+
+
+            EcsEntity ent = _world.NewEntity();
+            ent.Get<RestartComponent>();
+
+            EcsEntity ent2 = _world.NewEntity();
+            ent2.Get<WaitForTochComponent>();
+        }
+
+
+
+        /// <summary>Загружаем номер текущего уровня</summary>
+        public void LoadLevelData()
+        {
+            if (PlayerPrefs.HasKey(PPString.CurrentLevel.ToString()))
+            {
+                _globalData.CurrentLevel = PlayerPrefs.GetInt(PPString.CurrentLevel.ToString());
+            }
+            else
+            {
+                PlayerPrefs.SetInt(PPString.CurrentLevel.ToString(), 0);
+                PlayerPrefs.Save();
+                _globalData.CurrentLevel = 0;
+            }
+        }
+
+    }
+}

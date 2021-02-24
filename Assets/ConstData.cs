@@ -107,3 +107,15 @@ public static class Const
     }
 
 }
+
+/// <summary>Клетка на карте уровней</summary>
+public class LevelCell
+{
+    public string Squares;
+    public string Obj;
+
+    public override string ToString()
+    {
+        return Squares + "_" + Obj;
+    }
+}

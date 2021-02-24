@@ -56,10 +56,19 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ConstData.cs" />
-    <Compile Include="Assets\01_MainGame\Finish\FinishScript.cs" />
     <Compile Include="Assets\01_MainGame\DirChange\DirChangeScript.cs" />
     <Compile Include="Assets\01_MainGame\Camera\GameCameraScript.cs" />
+    <Compile Include="Assets\01_MainGame\Finish\FinishScript.cs" />
+    <Compile Include="Assets\ConstData.cs" />
+    <Compile Include="Assets\01_MainGame\Square\SquareScript.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\RestartComponent.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\GlobalData.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\EcsStartup.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\InitSystem.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\LoadAll.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\LoadPrefab.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\WaitForTochComponent.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\01_RestartSystem.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\LevelMap\Level22.txt" />
@@ -755,6 +764,15 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.Ecs">
+      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.Ecs.UnityIntegration">
+      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.Ecs.UnityIntegration.Editor">
+      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
