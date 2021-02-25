@@ -9,6 +9,13 @@ public class Cell
     public GameObject Obj;
     public Color FinishColor;
     public Direction ChangeDirection;
+
+    public Cell()
+    {
+        Obj = null;
+        FinishColor = Color.None;
+        ChangeDirection = Direction.None;
+    }
 }
 
 
@@ -24,10 +31,10 @@ public class UndoItem
 public enum Direction
 {
     None,
-    Left,
-    Right,
     Up,
+    Left,
     Down,
+    Right,
 }
 
 public enum Color
@@ -66,6 +73,9 @@ public static class Const
     public static int MapSize = 7;
     /// <summary>Кол-во уровней в игре</summary>
     public static int MaxLevel = 36;
+    /// <summary>Скорость движения квадратов</summary>
+    public static float MoveSpeed = 250;
+
 
     /// <summary>конвертирует enum Dir  to Vector </summary>
     public static Vector2Int DirToVecI(Direction dir)

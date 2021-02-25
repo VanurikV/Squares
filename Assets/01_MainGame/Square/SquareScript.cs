@@ -24,6 +24,7 @@ namespace squares
         public void SetDirection(Direction dir)
         {
             SquareDirection = dir;
+            Arrow.transform.rotation=new Quaternion(0,0,0,0);
             Arrow.transform.Rotate(0, 0, 90 * ((int)dir - 1));
         }
 
@@ -64,6 +65,14 @@ namespace squares
             }
 
             SetDirection(SquareDirection);
+        }
+
+        public void Init(Color col, Direction dir)
+        {
+            SquareColor = col;
+            sr.sprite = SquareSprites[(int)SquareColor - 1];
+
+            SetDirection(dir);
         }
 
 

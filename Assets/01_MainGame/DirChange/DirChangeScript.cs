@@ -7,6 +7,11 @@ public class DirChangeScript : MonoBehaviour
 
     public Direction CurDirection;
 
+    public Direction GetDirection()
+    {
+        return CurDirection;
+    }
+
     public void Init(string type)
     {
         Direction dir = Direction.Up;

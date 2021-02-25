@@ -1,0 +1,109 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 8.1  (6.3.0) 64bit' Language: 'ru' Physical Memory: 16257 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Unity\2020.2.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+E:/Unity Project/Squares
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+57358
+Successfully changed project path to: E:/Unity Project/Squares
+E:/Unity Project/Squares
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 149.96 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
+[Subsystems] Discovering subsystems at path C:/Unity/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Unity Project/Squares/Assets
+GfxDevice: creating device client; threaded=0
+d3d11: QueryInterface(IDXGIFactory5) failed (80004002).
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics (ID=0x102)
+    Vendor:   
+    VRAM:     1632 MB
+    Driver:   9.17.10.3223
+Initialize mono
+Mono path[0] = 'C:/Unity/2020.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Unity/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Unity/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002610 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 118.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.468 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001407 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of Unity.Android.Logcat.AndroidLogcat:.ctor due to: Could not load file or assembly 'UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.Android.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+0x00007ff6101e4f3c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff6101ed319 (Unity) StackWalker::ShowCallstack
+0x00007ff6116bae6c (Unity) GetStacktrace
+0x00007ff612798013 (Unity) DebugStringToFile
+0x00007ff61000b9fb (Unity) ScanForAttributesAndInterfaceImplementations
+0x00007ff61001edca (Unity) MonoManager::EndReloadAssembly
+0x00007ff610025ff9 (Unity) MonoManager::ReloadAssembly
+0x00007ff6113c5391 (Unity) LoadDomainAndUserAssemblies
+0x00007ff6113c583e (Unity) LoadUserAssemblies
+0x00007ff610d508a1 (Unity) Application::InitializeProject
+0x00007ff6116c8422 (Unity) WinMain
+0x00007ff61352e3c6 (Unity) __scrt_common_main_seh
+0x00007ff830fa13f2 (KERNEL32) BaseThreadInitThunk
+0x00007ff8318254f4 (ntdll) RtlUserThreadStart
+
+Unloading broken assembly Library/ScriptAssemblies/Unity.Mobile.AndroidLogcat.Editor.dll, this assembly can cause crashes in the runtime
+0x00007ff6101e4f3c (Unity) StackWalker::GetCurrentCallstack
+0x00007ff6101ed319 (Unity) StackWalker::ShowCallstack
+0x00007ff6116bae6c (Unity) GetStacktrace
+0x00007ff612798013 (Unity) DebugStringToFile
+0x00007ff610027b49 (Unity) MonoManager::SetupLoadedEditorAssemblies
+0x00007ff61001f11c (Unity) MonoManager::EndReloadAssembly
+0x00007ff610025ff9 (Unity) MonoManager::ReloadAssembly
+0x00007ff6113c5391 (Unity) LoadDomainAndUserAssemblies
+0x00007ff6113c583e (Unity) LoadUserAssemblies
+0x00007ff610d508a1 (Unity) Application::InitializeProject
+0x00007ff6116c8422 (Unity) WinMain
+0x00007ff61352e3c6 (Unity) __scrt_common_main_seh
+0x00007ff830fa13f2 (KERNEL32) BaseThreadInitThunk
+0x00007ff8318254f4 (ntdll) RtlUserThreadStart
+
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 131.02 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.477 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1928 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.3 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2362.
+Total: 3.661998 ms (FindLiveObjects: 0.408213 ms CreateObjectMapping: 0.154611 ms MarkObjects: 2.975353 ms  DeleteObjects: 0.121504 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -668,6 +668,9 @@
     <Reference Include="PsdPlugin">
       <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
     </Reference>
+    <Reference Include="Leopotam.Ecs.UnityIntegration">
+      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -676,6 +679,9 @@
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.Ecs.UnityIntegration.Editor">
+      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
@@ -713,6 +719,9 @@
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Leopotam.Ecs">
+      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -745,15 +754,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Leopotam.Ecs">
-      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.dll</HintPath>
-    </Reference>
-    <Reference Include="Leopotam.Ecs.UnityIntegration">
-      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.dll</HintPath>
-    </Reference>
-    <Reference Include="Leopotam.Ecs.UnityIntegration.Editor">
-      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

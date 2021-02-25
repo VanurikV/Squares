@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace squares
 {
-    sealed class EcsStartup : MonoBehaviour
+    public class EcsStartup : MonoBehaviour
     {
-        EcsWorld _world;
-        EcsSystems _systems;
+        public EcsWorld _world;
+        public EcsSystems _systems;
         public GlobalData _globalData;
 
         void Start()
@@ -25,6 +25,17 @@ namespace squares
                 // .Add (new TestSystem1 ())
                 // .Add (new TestSystem2 ())
                 .Add(new InitSystem())
+
+                .Add(new S_01_RestartSystem())
+                .Add(new S_02_TochSystem())
+                .Add(new S_03_CheckMoveSystem())
+                .Add(new S_04_MoveSystem())
+
+                .Add(new S_05_UndoSystem())
+
+                .Add(new S_06_CheckFinishSystem())
+                .Add(new S_07_FinishSystem())
+
 
                 // register one-frame components (order is important), for example:
                 // .OneFrame<TestComponent1> ()

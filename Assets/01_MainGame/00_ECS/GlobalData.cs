@@ -11,7 +11,7 @@ public class GlobalData
     public LevelCell[][,] AllLevels = new LevelCell[Const.MaxLevel][,];
 
     /// <summary>Список ходов для отмены </summary>
-    public List<List<UndoItem>> UndList=new List<List<UndoItem>>();
+    public Stack<List<UndoItem>> UndList =new Stack<List<UndoItem>>();
 
     /// <summary>Текущее игровое поле</summary>
     public Cell[,] GameField;

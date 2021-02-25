@@ -56,19 +56,31 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\MoveComponent.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\02_TochSystem.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\04_MoveSystem.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\LoadPrefab.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\03_CheckMoveSystem.cs" />
+    <Compile Include="Assets\01_MainGame\Square\SquareScript.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\WaitForTochComponent.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\UndoComponent.cs" />
     <Compile Include="Assets\01_MainGame\DirChange\DirChangeScript.cs" />
+    <Compile Include="Assets\01_MainGame\RestartButton\RestartButtonScript.cs" />
     <Compile Include="Assets\01_MainGame\Camera\GameCameraScript.cs" />
     <Compile Include="Assets\01_MainGame\Finish\FinishScript.cs" />
-    <Compile Include="Assets\ConstData.cs" />
-    <Compile Include="Assets\01_MainGame\Square\SquareScript.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\LoadAll.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\CheckFinishComponent.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\00_Components\RestartComponent.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\GlobalData.cs" />
-    <Compile Include="Assets\01_MainGame\00_ECS\EcsStartup.cs" />
-    <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\InitSystem.cs" />
-    <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\LoadAll.cs" />
-    <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\LoadPrefab.cs" />
-    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\WaitForTochComponent.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\06_CheckFinishSystem.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\01_RestartSystem.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\InitSystem.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\EcsStartup.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\CheckMoveComponent.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\05_UndoSystem.cs" />
+    <Compile Include="Assets\ConstData.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\FinishComponent.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\07_FinishSystem.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\LevelMap\Level22.txt" />
@@ -687,6 +699,9 @@
     <Reference Include="PsdPlugin">
       <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
     </Reference>
+    <Reference Include="Leopotam.Ecs.UnityIntegration">
+      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -695,6 +710,9 @@
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Leopotam.Ecs.UnityIntegration.Editor">
+      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
@@ -732,6 +750,9 @@
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Leopotam.Ecs">
+      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -764,15 +785,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Leopotam.Ecs">
-      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.dll</HintPath>
-    </Reference>
-    <Reference Include="Leopotam.Ecs.UnityIntegration">
-      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.dll</HintPath>
-    </Reference>
-    <Reference Include="Leopotam.Ecs.UnityIntegration.Editor">
-      <HintPath>Library\ScriptAssemblies\Leopotam.Ecs.UnityIntegration.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

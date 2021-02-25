@@ -1,6 +1,5 @@
 using Leopotam.Ecs;
 using System;
-using Client;
 using UnityEngine;
 
 namespace squares

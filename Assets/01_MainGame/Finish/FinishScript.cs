@@ -14,6 +14,11 @@ public class FinishScript : MonoBehaviour
         sr = gameObject.GetComponent<SpriteRenderer>();
     }
 
+    public Color GetColor()
+    {
+        return FinishColor;
+    }
+
     /// <summary>При инициализации выставляем sprite</summary>
     public void Init(string type)
     {
