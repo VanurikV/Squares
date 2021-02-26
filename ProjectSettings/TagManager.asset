@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Square
   - DirChange
+  - LevelButton
   layers:
   - Default
   - TransparentFX

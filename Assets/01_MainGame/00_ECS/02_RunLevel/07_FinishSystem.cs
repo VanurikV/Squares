@@ -1,4 +1,5 @@
 using Leopotam.Ecs;
+using UnityEngine;
 
 namespace squares
 {
@@ -17,12 +18,34 @@ namespace squares
                 foreach (int i in _finishFilter)
                     _finishFilter.GetEntity(i).Destroy();
 
-                _globalData.CurrentLevel++;
+                SaveGameProggress();
 
                 EcsEntity ent1 = _world.NewEntity();
                 ent1.Get<RestartComponent>();
-                
+ 
             }
         }
+
+        public void SaveGameProggress()
+        {
+            _globalData.CurrentLevel++;
+
+            if (_globalData.CurrentLevel >= Const.MaxLevel)
+                _globalData.CurrentLevel = 0;
+
+            PlayerPrefs.SetInt(PPString.CurrentLevel.ToString(), _globalData.CurrentLevel);
+            PlayerPrefs.Save();
+
+            int MaxLevel = PlayerPrefs.GetInt(PPString.MaxCompleteLevel.ToString());
+            if (MaxLevel < _globalData.CurrentLevel)
+            {
+
+                PlayerPrefs.SetInt(PPString.MaxCompleteLevel.ToString(), _globalData.CurrentLevel);
+                PlayerPrefs.Save();
+            }
+
+        }
+
+
     }
 }

@@ -25,6 +25,7 @@ namespace squares
                 ClearData();
                 DeleteObject();
                 InitGameField();
+                InitLevelString();
             }
         }
 
@@ -136,7 +137,12 @@ namespace squares
             }
 
         }
-        
+
+        private void InitLevelString()
+        {
+            GameObject.Find("LevelString").GetComponent<LevelScript>().SetLevel();
+        }
+
 
     }
 }

@@ -59,6 +59,7 @@
     <Compile Include="Assets\01_MainGame\00_ECS\00_Components\MoveComponent.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\02_TochSystem.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\04_MoveSystem.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\FinishComponent.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\LoadPrefab.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\03_CheckMoveSystem.cs" />
     <Compile Include="Assets\01_MainGame\Square\SquareScript.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Assets\01_MainGame\DirChange\DirChangeScript.cs" />
     <Compile Include="Assets\01_MainGame\RestartButton\RestartButtonScript.cs" />
     <Compile Include="Assets\01_MainGame\Camera\GameCameraScript.cs" />
+    <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\07_FinishSystem.cs" />
     <Compile Include="Assets\01_MainGame\Finish\FinishScript.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\01_InitAll\LoadAll.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\00_Components\CheckFinishComponent.cs" />
@@ -79,8 +81,11 @@
     <Compile Include="Assets\01_MainGame\00_ECS\00_Components\CheckMoveComponent.cs" />
     <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\05_UndoSystem.cs" />
     <Compile Include="Assets\ConstData.cs" />
-    <Compile Include="Assets\01_MainGame\00_ECS\00_Components\FinishComponent.cs" />
-    <Compile Include="Assets\01_MainGame\00_ECS\02_RunLevel\07_FinishSystem.cs" />
+    <Compile Include="Assets\00_MainManu\Camera\CameraScript.cs" />
+    <Compile Include="Assets\00_MainManu\Script\ExitScript.cs" />
+    <Compile Include="Assets\00_MainManu\Script\PlayerPrefsScript.cs" />
+    <Compile Include="Assets\00_MainManu\Script\LevelManagetScript.cs" />
+    <Compile Include="Assets\01_MainGame\Level\LevelScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Resources\LevelMap\Level22.txt" />

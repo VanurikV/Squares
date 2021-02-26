@@ -8,7 +8,7 @@ namespace squares
     sealed class S_05_UndoSystem : IEcsRunSystem
     {
         // auto-injected fields.
-        readonly EcsWorld _world = null;
+        //readonly EcsWorld _world = null;
         private GlobalData _globalData = null;
 
         private EcsFilter<WaitForTochComponent> _waiteFilter = null;
