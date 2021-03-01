@@ -63,7 +63,13 @@ public enum PPString
     SoundPlayVol
 }
 
-
+public enum SoundFx
+{
+    ButtonClick,
+    SquareMove,
+    SquareMoveError,
+    LevelComplete,
+}
 
 public static class Const
 {

@@ -13,11 +13,12 @@ namespace squares
         public void Init()
         {
             LoladAllLevels();
-           
+
             LoadPrefab();
 
             LoadLevelData();
 
+            InitSound();
 
             EcsEntity ent = _world.NewEntity();
             ent.Get<RestartComponent>();
@@ -41,6 +42,22 @@ namespace squares
                 PlayerPrefs.Save();
                 _globalData.CurrentLevel = 0;
             }
+        }
+
+
+        public void InitSound()
+        {
+
+            _globalData.SoundFxScript = GameObject.Find("SoundFx").GetComponent<SoundFxScript>();
+            _globalData.SoundPlayScript = GameObject.Find("SoundPlay").GetComponent<SoundPlayScript>();
+
+            float vol = PlayerPrefs.GetFloat(PPString.SoundPlayVol.ToString());
+            float fx = PlayerPrefs.GetFloat(PPString.SoundFxVol.ToString());
+
+
+            GameObject.Find("SoundFx").GetComponent<AudioSource>().volume = fx;
+            GameObject.Find("SoundPlay").GetComponent<AudioSource>().volume = vol;
+
         }
 
     }

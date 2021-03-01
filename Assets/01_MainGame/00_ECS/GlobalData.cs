@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using squares;
 using UnityEngine;
 
 public class GlobalData
@@ -18,6 +19,10 @@ public class GlobalData
 
     /// <summary>Номер текущего уровня</summary>
     public int CurrentLevel;
+
+    public SoundFxScript SoundFxScript;
+    public SoundPlayScript SoundPlayScript;
+
 
     //Конструктор
     public GlobalData()

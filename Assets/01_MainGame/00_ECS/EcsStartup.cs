@@ -37,10 +37,18 @@ namespace squares
                 .Add(new S_07_FinishSystem())
 
 
+                .Add(new S_10_SoundSystem())
+
+                //.Add(new ExitSystem())
+
+
                 // register one-frame components (order is important), for example:
                 // .OneFrame<TestComponent1> ()
                 // .OneFrame<TestComponent2> ()
                 //.OneFrame<RestartComponent>()
+
+                .OneFrame<SoundFxComponent>()
+
 
                 // inject service instances here (order doesn't important), for example:
                 // .Inject (new CameraService ())

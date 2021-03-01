@@ -20,9 +20,13 @@ namespace squares
 
                 SaveGameProggress();
 
-                EcsEntity ent1 = _world.NewEntity();
-                ent1.Get<RestartComponent>();
- 
+                EcsEntity ent3 = _world.NewEntity();
+                SoundFxComponent s = new SoundFxComponent();
+                s.Fx = SoundFx.LevelComplete;
+                ent3.Get<SoundFxComponent>() = s;
+
+                GameObject.FindObjectOfType<LevelCompleteScript>(true).gameObject.SetActive(true);
+
             }
         }
 

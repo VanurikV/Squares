@@ -31,6 +31,12 @@ namespace squares
                     //если не можем выходим
                     EcsEntity ent = _world.NewEntity();
                     ent.Get<WaitForTochComponent>();
+
+                    EcsEntity ent4 = _world.NewEntity();
+                    SoundFxComponent ss = new SoundFxComponent();
+                    ss.Fx = SoundFx.SquareMoveError;
+                    ent4.Get<SoundFxComponent>() = ss;
+
                     return;
                 }
 
@@ -80,6 +86,12 @@ namespace squares
                 ent1.Get<MoveComponent>().DstPos = dstPos;
                 ent1.Get<MoveComponent>().SrcPosInts = srcPosInt;
                 ent1.Get<MoveComponent>().DstPosInts = dstPosInt;
+
+
+                EcsEntity ent3 = _world.NewEntity();
+                SoundFxComponent s =new SoundFxComponent();
+                s.Fx = SoundFx.SquareMove;
+                ent3.Get<SoundFxComponent>() = s;
 
             }
         }
