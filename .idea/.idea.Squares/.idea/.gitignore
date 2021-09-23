@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/.idea.Squares.iml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../:\UnityGame\Squares\.idea\.idea.Squares\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
