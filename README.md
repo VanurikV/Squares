@@ -9,7 +9,7 @@ Puzzle game implemented on unity
 
 ## Video
 
-[![Watch the video](https://img.youtube.com/vi/XVNrsX4O7HM/hqdefault.jpg)](https://youtu.be/XVNrsX4O7HM)
+[![Watch the video](https://img.youtube.com/vi/LkJwZiTXco0/hqdefault.jpg)](https://youtu.be/LkJwZiTXco0)
 
 
 
@@ -17,3 +17,4 @@ Puzzle game implemented on unity
 
 ## Downloads
 [Android APK file (20Mb)](https://github.com/VanurikV/Squares/raw/main/Etc/Squares.apk?raw=true)
+
